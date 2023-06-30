@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main{
+   public static void main(String []args){
+        Scanner s = new Scanner(System.in);
+        String str = s.nextLine();
+        boolean flag = true;
+        char ch[] = str.toCharArray();
+        for(char i:str.toCharArray()){
+            if(str.indexOf(i)==str.lastIndexOf(i)){
+                System.out.println("Non repeating character is:"+ i);
+                flag = false;
+                break;
+            }
+        }
+        if(flag){
+            System.out.println("There is a non repeating character");
+        }
+    }
+}
